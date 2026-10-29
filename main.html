@@ -10,9 +10,16 @@
             background-color: rgb(204, 204, 204);
         }
 
-        h1,
+        h1 {
+            text-align: center;
+        }
+
         h2 {
             text-align: center;
+        }
+
+        ul {
+            padding: 0;
         }
 
         li {
@@ -23,7 +30,12 @@
             text-decoration-line: none;
         }
 
-        .player_one,
+        .player_one {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
         .player_two {
             background-color: rgb(255, 255, 255);
             padding: 20px;
@@ -36,27 +48,52 @@
 
     <h1>My Playlist</h1>
 
-    <!-- FIRST PLAYER -->
     <div class="player_one">
         <h2>Now Playing...</h2>
 
         <video controls>
             <source
                 src="https://www.w3schools.com/tags/movie.mp4"
-                type="video/mp4"
-            >
+                type="video/mp4">
         </video>
     </div>
 
-    <!-- SECOND PLAYER -->
-    <div class="player_two">
+    <div class="playlist">
         <h2>MP3 songs</h2>
 
+        <ul>
+            <li>
+                <a href="https://www.pagalworld.com.se/files/download/id/64630"
+                   target="_blank">Song 1</a>
+            </li>
+
+            <li>
+                <a href="https://www.pagalworld.com.se/files/download/id/64630"
+                   target="_blank">Song 2</a>
+            </li>
+
+            <li>
+                <a href="https://www.pagalworld.com.se/files/download/id/64630"
+                   target="_blank">Song 3</a>
+            </li>
+
+            <li>
+                <a href="https://www.pagalworld.com.se/files/download/id/64630"
+                   target="_blank">Song 4</a>
+            </li>
+
+            <li>
+                <a href="https://www.pagalworld.com.se/files/download/id/64630"
+                   target="_blank">Song 5</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="player_two">
         <audio controls>
             <source
                 src="https://www.pagalworld.com.se/files/download/id/64630"
-                type="audio/mpeg"
-            >
+                type="audio/mpeg">
         </audio>
     </div>
 
